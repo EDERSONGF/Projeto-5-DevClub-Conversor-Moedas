@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  text-decoration: none;
+  text-decoration-line: none;
   font-family: "Roboto", sans-serif;
   outline: none;
 }
@@ -18,9 +18,10 @@ body {
 }
 main {
   width: 400px;
+  max-height: 785px;
   background-color: #f4f4f4;
   border-radius: 20px;
-  margin: 0 auto 40px;
+  margin: 0 auto 23px;
   padding: 44px 24px;
 }
 
@@ -79,19 +80,52 @@ section {
   margin: 15px 0;
 }
 .currency-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 4px;
 }
 
-.currency{
-color: #777777;
-font-size: 16px;
+.currency {
+  color: #777777;
+  font-size: 16px;
 }
 
-.currency-value{
-    color: #555555;
-    font-weight: 700;
-    font-size: 20px;
+.currency-value, .currency-value-to-convert {
+  color: #555555;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer-register {
+  display: flex;
+  margin-inline: auto;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+ }
+
+a {
+  color: #f4f4f4;
+}
+
+.tittle-name-footer {
+  font-size: 22px;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+.tittle-name-footer::before {
+  content: "<";
+}
+.tittle-name-footer::after {
+  content: "/>";
+  margin-left: 6px;
+}
+#text-footer-resgister {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 23px auto 0;
+  font-size: 14px;
 }
